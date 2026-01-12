@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 2 · id + índice —miguel lopez atienza</title>
+    <style>
+     /* TIPOGRAFÍA GLOBAL (web-safe + familia genérica de respaldo) */
+      * {
+        font-family: Georgia, serif;
+      }
+
+      /* FONDO GENERAL DE LA PÁGINA (cámbialo por un color suave con buen contraste) */
+      body {
+        background-color: rgb(212, 228, 252);
+      }
+
+      /* TÍTULO: elige un color presente en tu imagen */
+      h1 {
+        color: #52504a
+      }
+
+      /* PÁRRAFO: otro color de tu imagen (asegúrate de que se lee bien sobre el fondo) */
+      p {
+        color: #98d7f5
+      }
+
+      /* ÉNFASIS: el <strong> podrá tener un tercer color (también extraído de la imagen) */
+      strong {
+        color: #c21737
+      /* === REGLAS POR id (afectan SOLO al segundo animal) === */
+      #titulo-animal2 { color: rgb(71, 102, 78); }   /* morado de ejemplo */
+      #desc-animal2   { color: rgb(214, 122, 69); }     /* azul petróleo */
+      #desc-animal2 strong { color: rgb(186, 22, 170); } /* énfasis SOLO dentro del segundo párrafo */
+    </style>
+  </head>
+  <body>
+    <!-- ÍNDICE: ul con enlaces a ids -->
+    <h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#titulo-animal1">Primera criatura</a></li>
+      <li><a href="#titulo-animal2">Segunda criatura</a></li>
+    </ul>
+
+    <!-- PRIMER ANIMAL: añade ids para enlazar desde el índice -->
+    <h1 id="titulo-animal1">criatura colorida</h1>
+ 
+    <p id="desc-animal1">
+      La <strong>criatura</strong> vive en zonas tropicales. Su hábitat típico combina vegetación densa, calor y humeda.
+      Se caracteriza por un patrón de color llamativo: azul y rojo y por su comportamiento tranquilo.
+    </p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg"
+        
+      
+  
+         alt="babuino"
+         width="520">
+    <p><a href="#indice">Volver al índice</a></p>
+
+    <!-- SEGUNDO ANIMAL: con ids para estilo y para anclar desde el índice -->
+    <h1 id="titulo-animal2">Segundo animal: Lince ibérico</h1>
+    <p id="desc-animal2">
+      El <strong>lince ibérico</strong> habita matorrales mediterráneos. Su pelaje moteado y las
+      orejas con pinceles le dan una apariencia inconfundible.
+    </p>
+      <img src="lince.png/imagenes"
+         alt="lince"
+         width="520">
+    <p><a href="#indice">Volver al índice</a></p>
+  </body>
+</html>
