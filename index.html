@@ -1,34 +1,87 @@
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Mi trabajo en TICII · Miguel López Atienza</title>
-    <style>
-      { font-family: Georgia, serif;} 
-      body {  background-color: rgba(37, 150, 190);}
-      h1 {  color:rgba(37, 150, 190);} 
-      h1 {   color:rgba(6, 189, 67); } 
-      </style>
-  </head>
-  <body>
-   <h1><h1> Mi trabajo en TICII —  Miguel López Atienza</h1>
-    <h2 id="indice">Índice</h2>
-       <ul>
-      <li><a href="#presentacion">presentacion </a></li>
-      <li><a href="#html">Mis ejercicios  Introducción HTML</a></li>
-          <li><a href="#css">Mis ejercicios  Introducción css </a></li>
-          <li><a href="#calidad">recursos de calidad  </a></li>
-          <li><a href="#licencias">MCréditos y licencias </a></li>
-    </ul>
+<head>
+  <meta charset="utf-8">
+  <title>Mi trabajo en TICII · Miguel López Atienza</title>
 
-<h1 id="presentacion>presentacion</h1>
- 
-    <p id="Presentacion"
-    <p>Hola, soy <strong> Miguel López Atienza</strong> (1/a). Me interesan <em>mates</em>, <em>digitalizacion</em> y <em>fisica</em>. 
-    En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.</p>
-    <p><small>Última actualización:21/11/25 <!-- TODO: fecha -->.</small></p>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f0f0f0; /* Fondo suave */
+      color: #333333; /* Color base de texto para facilitar la lectura */
+    }
 
-    <h2 id="html">Mis ejercicios  Introducción HTML</h2>
-    <p>Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:</p>
+    .titulos {
+      text-align: center;
+      color: #0099cc; /* Azul brillante para títulos */
+    }
+
+    .texto {
+      color: #333333; /* Gris oscuro para los párrafos */
+    }
+
+    /* Color de los links */
+    a {
+      color: #006699; /* Azul de los enlaces */
+    }
+
+    a:hover {
+      color: #ff6600; /* Naranja brillante al pasar el ratón */
+    }
+    
+    code {
+      color: #d32f2f; /* Rojo para el código, para destacarlo */
+      background-color: #f5f5f5; /* Fondo gris claro para resaltar el código */
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    /* Estilo para las listas */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="titulos">Mi trabajo en TICII — Miguel López Atienza</h1>
+
+  <h2 id="indice" class="titulos">Índice</h2>
+  <ul>
+    <li><a href="#presentacion">Presentacion</a></li>
+    <li><a href="#html">Mis ejercicios Introducción HTML</a></li>
+    <li><a href="#css">Mis ejercicios Introducción css</a></li>
+    <li><a href="#calidad">Recursos de calidad</a></li>
+    <li><a href="#licencias">Créditos y licencias</a></li>
+  </ul>
+
+  <section id="presentacion">
+    <h2 class="titulos">Presentación personal</h2>
+
+    <p class="texto">
+      Hola, soy <strong>Miguel López Atienza</strong> (1/a). Me interesan
+      <em>mates</em>, <em>digitalizacion</em> y <em>fisica</em>.
+      En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.
+    </p>
+
+    <p class="texto">
+      <small>Última actualización:21/11/25 <!-- TODO: fecha -->.</small>
+    </p>
+  </section>
+
+  <section>
+    <h2 id="html" class="titulos">Mis ejercicios Introducción HTML</h2>
+    <p class="texto">
+      Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta
+      <code>ejercicios_html/</code>:
+    </p>
+
     <ul>
       <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 1 · Estructura mínima + títulos y párrafos</a></li>
       <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 2 · Énfasis y anidado de etiquetas (inline)</a></li>
@@ -36,37 +89,53 @@
       <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea4.html">Tarea 4 · Enlaces con <code>&lt;a&gt;</code></a></li>
       <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea5.html">Tarea 5 · Imágenes con <code>&lt;img&gt;</code></a></li>
     </ul>
-  <h2 id="css">Mis ejercicios  Introducción css</h2>
-     <ul>
-      <li><a href="web_loèzatienza_miguel_css_1.html">Tarea 1 criatura colorida</a></li>
-      <li><a href="web_loèzatienza_miguel_css.html">Tarea 2 ·dos animales</a></li>
-    <h2>Imagen de portada</h2>
-    <p>Una imagen local (carpeta <code>imagenes/</code>) o por URL. Recuerda usar <strong>solo</strong> <code>width</code> o <code>height</code>:</p>
-    <img src="imagenes/aula-digital.jpg" 
-         alt="Alumnado trabajando en aula con ordenadores"
-         width="480">
+  </section>
 
-     <h2 id="calidad">recursos de calidad</h2> 
-    <p>Referencias consultadas durante las tareas (se abrirán en pestaña nueva):</p>
+  <section>
+    <h2 id="css" class="titulos">Mis ejercicios Introducción CSS</h2>
+    <ul>
+      <li><a href="web_loèzatienza_miguel_css_1.html">Tarea 1 criatura colorida</a></li>
+      <li><a href="web_loèzatienza_miguel_css.html">Tarea 2 · dos animales</a></li>
+    </ul>
+  </section>
+
+  <h2 class="titulos">Imagen de portada</h2>
+  <p class="texto">
+    Una imagen local (carpeta <code>imagenes/</code>) o por URL. Recuerda usar
+    <strong>solo</strong> <code>width</code> o <code>height</code>:
+  </p>
+
+  <img src="imagenes/aula-digital.jpg"
+       alt="Alumnado trabajando en aula con ordenadores"
+       width="480">
+
+  <section>
+    <h2 id="calidad" class="titulos">Recursos de calidad</h2>
+    <p class="texto">Referencias consultadas durante las tareas (se abrirán en pestaña nueva):</p>
+
     <ul>
       <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs (Mozilla)</a></li>
       <li><a href="https://www.w3schools.com/tags/" target="_blank">Referencia de etiquetas HTML</a></li>
       <li><a href="https://commons.wikimedia.org/wiki/Main_Page?uselang=es" target="_blank">Wikimedia Commons (imágenes con licencias CC)</a></li>
     </ul>
+  </section>
 
-    <h2 id="licencias">Créditos y licencias</h2>
-    <p>Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:</p>
-    <ul>
-      <li><!-- TODO: Autor — “Título” — Licencia CC — <a href="URL" target="_blank">Fuente</a> --></li>
-    </ul>
+  <h2 id="licencias" class="titulos">Créditos y licencias</h2>
+  <p class="texto">
+    Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:
+  </p>
 
-    <h2>Contacto</h2>
-    <p>Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor. 
-    También puedes enlazar recursos de interés y anotarlos aquí.</p>
+  <ul>
+    <li><!-- TODO: Autor — “Título” — Licencia CC — <a href="URL" target="_blank">Fuente</a> --></li>
+  </ul>
 
-    <!-- TODO: Revisa enlaces, textos y créditos antes de publicar -->
-  </body>
-  </html>
+  <h2 class="titulos">Contacto</h2>
+  <p class="texto">
+    Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor.
+    También puedes enlazar recursos de interés y anotarlos aquí.
+  </p>
 
+  <!-- TODO: Revisa enlaces, textos y créditos antes de publicar -->
 
-
+</body>
+</html>
