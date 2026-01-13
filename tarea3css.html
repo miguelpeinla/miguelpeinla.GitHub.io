@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Catálogo de Criaturas</title>
+  <style>
+    /* Estilos generales para todo el documento */
+    * {
+      font-family: Georgia, serif;
+    }
+
+    /* Clases base para los títulos y textos */
+    .titulo {
+      text-align: left; /* Alineado a la izquierda */
+      color: rgb(27, 38, 59);
+    }
+
+    .texto {
+      color: rgb(45, 55, 72);
+    }
+
+    .texto strong {
+      color: rgb(231, 111, 81);
+    }
+
+    /* Estilos para el Grupo A */
+    .grupo-a .titulo {
+      color: rgb(45, 106, 79);
+    }
+
+    .grupo-a .texto {
+      color: rgb(27, 38, 59);
+    }
+
+    .grupo-a .texto strong {
+      color: rgb(10, 123, 131);
+    }
+
+    /* Estilos para el Grupo B */
+    .grupo-b .titulo {
+      color: rgb(138, 43, 226);
+    }
+
+    .grupo-b .texto {
+      color: rgb(38, 70, 83);
+    }
+
+    .grupo-b .texto strong {
+      color: rgb(244, 162, 97);
+    }
+
+    /* Estilos del índice */
+    #indice {
+      text-align: left; /* Alineado a la izquierda */
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    a {
+      color: rgb(27, 38, 59);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(138, 43, 226);
+    }
+
+    /* Alineación y tamaño de las imágenes */
+    img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      display: block;
+      margin: 20px 0; /* Márgenes superior e inferior para separar las imágenes */
+    }
+
+    /* Separación entre las secciones de cada grupo */
+    section {
+      margin-bottom: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 id="indice">Catálogo de Criaturas</h1>
+
+  <ul>
+    <li><a href="#grupo-a">Grupo A</a></li>
+    <li><a href="#grupo-b">Grupo B</a></li>
+  </ul>
+
+  <!-- Grupo A -->
+  <h2 id="grupo-a">Grupo A</h2>
+
+  <section class="grupo-a">
+    <h3 class="titulo">Unicornio</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unicorn_heraldry.svg/800px-Unicorn_heraldry.svg.png" alt="Unicornio">
+    <p class="texto">El unicornio vive en los bosques mágicos. Su rasgo distintivo es su <strong>cuerno</strong> brillante en la frente.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Unicorn_heraldry.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <section class="grupo-a">
+    <h3 class="titulo">Fénix</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Phoenix_1.svg/1024px-Phoenix_1.svg.png" alt="Fénix">
+    <p class="texto">El fénix habita en volcanes y zonas cálidas. Su rasgo distintivo es su capacidad de <strong>renacer</strong> de las cenizas.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Phoenix_1.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <section class="grupo-a">
+    <h3 class="titulo">Dragón</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dragon_wikimedia.svg/800px-Dragon_wikimedia.svg.png" alt="Dragón">
+    <p class="texto">Los dragones viven en montañas altas. Su rasgo distintivo es su <strong>aliento de fuego</strong> que puede destruir aldeas enteras.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Dragon_wikimedia.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <p><a href="#indice">Volver al índice</a></p>
+
+  <!-- Grupo B -->
+  <h2 id="grupo-b">Grupo B</h2>
+
+  <section class="grupo-b">
+    <h3 class="titulo">Grifo</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Griffin_heraldry.svg/800px-Griffin_heraldry.svg.png" alt="Grifo">
+    <p class="texto">El grifo vive en los cielos y las montañas. Su rasgo distintivo es su cuerpo de <strong>león</strong> y alas de águila.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Griffin_heraldry.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <section class="grupo-b">
+    <h3 class="titulo">Sirena</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Siren_figure.svg/800px-Siren_figure.svg.png" alt="Sirena">
+    <p class="texto">La sirena habita en los océanos. Su rasgo distintivo es su voz <strong>hipnotizante</strong> que atrae a los marineros.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Siren_figure.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <section class="grupo-b">
+    <h3 class="titulo">Quimera</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chimera_heraldry.svg/800px-Chimera_heraldry.svg.png" alt="Quimera">
+    <p class="texto">La quimera habita en regiones desérticas. Su rasgo distintivo es que tiene tres cabezas: de <strong>león</strong>, cabra y serpiente.</p>
+    <p><small>Imagen: <a href="https://commons.wikimedia.org/wiki/File:Chimera_heraldry.svg">Wikimedia Commons</a> (Licencia: Creative Commons)</small></p>
+  </section>
+
+  <p><a href="#indice">Volver al índice</a></p>
+
+</body>
+</html>
