@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Pre CSS 4 · Modelo de caja (semántico)</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: rgb(245, 247, 250); /* Fondo suave */
+      }
+
+      main {
+        max-width: 900px; /* Ancho máximo ajustable */
+        margin: 24px auto;
+        border: 2px dashed rgb(180, 190, 200);
+        padding: 16px;
+      }
+
+      header, nav, section, footer {
+        border: 2px solid rgb(210, 220, 230);
+        background-color: rgb(255, 255, 255);
+        padding: 16px;
+        margin: 14px 0;
+        border-radius: 14px; /* Bordes redondeados */
+      }
+
+      header h1 {
+        text-align: center;
+        color: rgb(27, 38, 59);
+      }
+
+      nav p {
+        color: rgb(45, 55, 72);
+      }
+
+      article {
+        border: 1px solid rgb(225, 230, 235);
+        background-color: rgb(255, 255, 255);
+        padding: 14px;
+        margin: 12px 0;
+        border-radius: 14px; /* Bordes redondeados en tarjetas */
+      }
+
+      article h2 {
+        color: rgb(45, 106, 79);
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
+
+      article p {
+        color: rgb(45, 55, 72);
+        margin: 0;
+      }
+
+      img {
+        border: 2px solid rgb(210, 220, 230);
+        border-radius: 10px; /* Bordes redondeados en la imagen */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Modelo de caja con elementos semánticos</h1>
+        <p>Vamos a ver claramente cómo se comportan las cajas con margin, padding y border.</p>
+      </header>
+
+      <nav>
+        <p><strong>Nav</strong>: aquí irá el índice de tu página (en tu proyecto real).</p>
+        <p>En esta pre-práctica solo lo usamos para ver otra caja con borde y padding.</p>
+      </nav>
+
+      <section>
+        <article>
+          <h2>Tarjeta 1</h2>
+          <p>Esto es un <strong>article</strong> dentro de una <strong>section</strong>. Observa su borde, padding y margen.</p>
+        </article>
+
+        <article>
+          <h2>Tarjeta 2</h2>
+          <p>Las tarjetas son un patrón de diseño moderno: bloques con fondo blanco, borde suave y esquinas redondeadas.</p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2>Imagen como caja</h2>
+          <p>Una imagen también es una caja: tiene borde, tamaño y puede tener esquinas redondeadas.</p>
+          <img src="imagenes/criatura.jpg" alt="Imagen de prueba para ver su caja" width="420">
+        </article>
+      </section>
+
+      <footer>
+        <p><strong>Footer</strong>: zona final para créditos y enlaces de licencia.</p>
+      </footer>
+    </main>
+  </body>
+</html>
