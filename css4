@@ -1,4 +1,4 @@
-<!doctype html>
+<<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -9,55 +9,73 @@
       }
 
       body {
-        background-color: rgb(245, 247, 250); /* Fondo suave */
+        background-color: rgb(240, 245, 255); /* Fondo más claro */
       }
 
       main {
         max-width: 900px; /* Ancho máximo ajustable */
         margin: 24px auto;
-        border: 2px dashed rgb(180, 190, 200);
-        padding: 16px;
+        border: 3px solid rgb(0, 170, 255); /* Borde llamativo */
+        padding: 20px;
+        background-color: rgb(255, 255, 255); /* Fondo blanco para el contenedor principal */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
       }
 
       header, nav, section, footer {
-        border: 2px solid rgb(210, 220, 230);
+        border: 2px solid rgb(0, 170, 255); /* Bordes más llamativos */
         background-color: rgb(255, 255, 255);
-        padding: 16px;
-        margin: 14px 0;
-        border-radius: 14px; /* Bordes redondeados */
+        padding: 18px;
+        margin: 16px 0;
+        border-radius: 12px; /* Bordes redondeados */
+        box-shadow: 0 4px 10px rgba(0, 170, 255, 0.1); /* Sombra suave */
       }
 
       header h1 {
         text-align: center;
-        color: rgb(27, 38, 59);
+        color: rgb(25, 40, 75); /* Color de texto más oscuro */
+        font-size: 2rem;
       }
 
       nav p {
-        color: rgb(45, 55, 72);
+        color: rgb(50, 60, 80);
+        font-size: 1rem;
       }
 
       article {
-        border: 1px solid rgb(225, 230, 235);
-        background-color: rgb(255, 255, 255);
-        padding: 14px;
-        margin: 12px 0;
-        border-radius: 14px; /* Bordes redondeados en tarjetas */
+        border: 2px solid rgb(255, 150, 0); /* Borde naranja para resaltar */
+        background-color: rgb(255, 250, 240); /* Fondo suave color crema */
+        padding: 16px;
+        margin: 16px 0;
+        border-radius: 14px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(255, 150, 0, 0.2); /* Sombra suave para las tarjetas */
       }
 
       article h2 {
-        color: rgb(45, 106, 79);
+        color: rgb(255, 100, 0); /* Color del encabezado naranja */
         text-align: center;
-        margin: 0 0 10px 0;
+        margin: 0 0 12px 0;
+        font-size: 1.5rem;
       }
 
       article p {
-        color: rgb(45, 55, 72);
-        margin: 0;
+        color: rgb(50, 60, 80);
+        font-size: 1rem;
+        line-height: 1.6;
       }
 
       img {
-        border: 2px solid rgb(210, 220, 230);
-        border-radius: 10px; /* Bordes redondeados en la imagen */
+        border: 3px solid rgb(0, 170, 255); /* Borde azul para la imagen */
+        border-radius: 12px; /* Bordes redondeados en la imagen */
+        width: 100%;
+        max-width: 420px; /* Tamaño controlado */
+        display: block;
+        margin: 12px auto;
+      }
+
+      footer p {
+        text-align: center;
+        color: rgb(100, 120, 140); /* Color gris para el pie de página */
+        font-size: 0.9rem;
       }
     </style>
   </head>
