@@ -5,137 +5,204 @@
   <title>Mi trabajo en TICII · Miguel López Atienza</title>
 
   <style>
+    /* Estilo global */
     body {
       font-family: Georgia, serif;
-      background-color: #f0f0f0; /* Fondo suave */
-      color: #333333; /* Color base de texto para facilitar la lectura */
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
     }
 
-    .titulos {
-      text-align: center;
-      color: #0099cc; /* Azul brillante para títulos */
+    /* Contenedor principal */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    /* Títulos */
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: #0099cc;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: normal;
     }
 
     .texto {
-      color: #333333; /* Gris oscuro para los párrafos */
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
-    /* Color de los links */
+    /* Estilo de los enlaces */
     a {
-      color: #006699; /* Azul de los enlaces */
+      text-decoration: none;
+      color: blue; /* Color de enlace azul */
     }
 
     a:hover {
-      color: #ff6600; /* Naranja brillante al pasar el ratón */
-    }
-    
-    code {
-      color: #d32f2f; /* Rojo para el código, para destacarlo */
-      background-color: #f5f5f5; /* Fondo gris claro para resaltar el código */
-      padding: 2px 5px;
-      border-radius: 3px;
+      color: darkblue; /* Color al pasar el ratón */
+      text-decoration: underline;
     }
 
-    /* Estilo para las listas */
+    /* Estilo del índice (sin caja) */
+    .indice {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    .indice li {
+      margin-bottom: 5px;
+    }
+
+    .indice a {
+      padding: 5px;
+      display: block;
+    }
+
+    /* Secciones */
+    section {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    section h2 {
+      margin-top: 0;
+    }
+
+    /* Listas */
     ul {
       list-style-type: none;
       padding: 0;
     }
 
     li {
-      margin: 5px 0;
+      margin-bottom: 10px;
     }
+
+    /* Imagen de portada */
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 1.2em;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <h1 class="titulos">Mi trabajo en TICII — Miguel López Atienza</h1>
+  <main>
+    <header>
+      <h1>Mi trabajo en TICII — Miguel López Atienza</h1>
+    </header>
 
-  <h2 id="indice" class="titulos">Índice</h2>
-  <ul>
-    <li><a href="#presentacion">Presentacion</a></li>
-    <li><a href="#html">Mis ejercicios Introducción HTML</a></li>
-    <li><a href="#css">Mis ejercicios Introducción css</a></li>
-    <li><a href="#calidad">Recursos de calidad</a></li>
-    <li><a href="#licencias">Créditos y licencias</a></li>
-  </ul>
-
-  <section id="presentacion">
-    <h2 class="titulos">Presentación personal</h2>
-
-    <p class="texto">
-      Hola, soy <strong>Miguel López Atienza</strong> (1/a). Me interesan
-      <em>mates</em>, <em>digitalizacion</em> y <em>fisica</em>.
-      En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.
-    </p>
-
-    <p class="texto">
-      <small>Última actualización:21/11/25 <!-- TODO: fecha -->.</small>
-    </p>
-  </section>
-
-  <section>
-    <h2 id="html" class="titulos">Mis ejercicios Introducción HTML</h2>
-    <p class="texto">
-      Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta
-      <code>ejercicios_html/</code>:
-    </p>
-
-    <ul>
-      <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 1 · Estructura mínima + títulos y párrafos</a></li>
-      <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 2 · Énfasis y anidado de etiquetas (inline)</a></li>
-      <li><a href="ejercicios.html/web-lopezatienza_miguel_tarea3.html">Tarea 3 · Listas en HTML</a></li>
-      <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea4.html">Tarea 4 · Enlaces con <code>&lt;a&gt;</code></a></li>
-      <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea5.html">Tarea 5 · Imágenes con <code>&lt;img&gt;</code></a></li>
+    <!-- Índice sin caja -->
+    <ul class="indice">
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#calidad">Recursos</a></li>
+      <li><a href="#licencias">Licencias</a></li>
     </ul>
-  </section>
 
-  <section>
-    <h2 id="css" class="titulos">Mis ejercicios Introducción CSS</h2>
-    <ul>
-      <li><a href="web_loèzatienza_miguel_css_1.html">Tarea 1 criatura colorida</a></li>
-      <li><a href="web_loèzatienza_miguel_css.html">Tarea 2 · dos animales</a></li>
-    </ul>
-  </section>
+    <section id="presentacion">
+      <h2>Presentación personal</h2>
+      <p class="texto">
+        Hola, soy <strong>Miguel López Atienza</strong> (1/a). Me interesan
+        <em>mates</em>, <em>digitalización</em> y <em>física</em>.
+        En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.
+      </p>
+      <p class="texto">
+        <small>Última actualización: 21/11/25.</small>
+      </p>
+    </section>
 
-  <h2 class="titulos">Imagen de portada</h2>
-  <p class="texto">
-    Una imagen local (carpeta <code>imagenes/</code>) o por URL. Recuerda usar
-    <strong>solo</strong> <code>width</code> o <code>height</code>:
-  </p>
+    <section id="html">
+      <h2>Mis ejercicios Introducción HTML</h2>
+      <p class="texto">
+        Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:
+      </p>
+      <ul>
+        <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 1 · Estructura mínima + títulos y párrafos</a></li>
+        <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea2.html">Tarea 2 · Énfasis y anidado de etiquetas (inline)</a></li>
+        <li><a href="ejercicios.html/web-lopezatienza_miguel_tarea3.html">Tarea 3 · Listas en HTML</a></li>
+        <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea4.html">Tarea 4 · Enlaces con <code>&lt;a&gt;</code></a></li>
+        <li><a href="ejercicios.html/web_lopezatienza_miguel_tarea5.html">Tarea 5 · Imágenes con <code>&lt;img&gt;</code></a></li>
+      </ul>
+    </section>
 
-  <img src="imagenes/aula-digital.jpg"
-       alt="Alumnado trabajando en aula con ordenadores"
-       width="480">
+    <section id="css">
+      <h2>Mis ejercicios Introducción CSS</h2>
+      <ul>
+        <li><a href="web_loèzatienza_miguel_css_1.html">Tarea 1 criatura colorida</a></li>
+        <li><a href="web_loèzatienza_miguel_css.html">Tarea 2 · dos animales</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 id="calidad" class="titulos">Recursos de calidad</h2>
-    <p class="texto">Referencias consultadas durante las tareas (se abrirán en pestaña nueva):</p>
+    <section>
+      <h2>Imagen de portada</h2>
+      <p class="texto">
+        Una imagen local (carpeta <code>imagenes/</code>) o por URL. Recuerda usar <strong>solo</strong> <code>width</code> o <code>height</code>:
+      </p>
+      <img src="imagenes/aula-digital.jpg" alt="Alumnado trabajando en aula con ordenadores" width="480">
+    </section>
 
-    <ul>
-      <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs (Mozilla)</a></li>
-      <li><a href="https://www.w3schools.com/tags/" target="_blank">Referencia de etiquetas HTML</a></li>
-      <li><a href="https://commons.wikimedia.org/wiki/Main_Page?uselang=es" target="_blank">Wikimedia Commons (imágenes con licencias CC)</a></li>
-    </ul>
-  </section>
+    <section id="calidad">
+      <h2>Recursos de calidad</h2>
+      <p class="texto">Referencias consultadas durante las tareas (se abrirán en nueva pestaña):</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs (Mozilla)</a></li>
+        <li><a href="https://www.w3schools.com/tags/" target="_blank">Referencia de etiquetas HTML</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/Main_Page?uselang=es" target="_blank">Wikimedia Commons (imágenes con licencias CC)</a></li>
+      </ul>
+    </section>
 
-  <h2 id="licencias" class="titulos">Créditos y licencias</h2>
-  <p class="texto">
-    Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:
-  </p>
+    <section id="licencias">
+      <h2>Créditos y licencias</h2>
+      <p class="texto">
+        Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:
+      </p>
+      <ul>
+        <li><!-- TODO: Autor — “Título” — Licencia CC — <a href="URL" target="_blank">Fuente</a> --></li>
+      </ul>
+    </section>
 
-  <ul>
-    <li><!-- TODO: Autor — “Título” — Licencia CC — <a href="URL" target="_blank">Fuente</a> --></li>
-  </ul>
+  </main>
 
-  <h2 class="titulos">Contacto</h2>
-  <p class="texto">
-    Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor.
-    También puedes enlazar recursos de interés y anotarlos aquí.
-  </p>
-
-  <!-- TODO: Revisa enlaces, textos y créditos antes de publicar -->
+  <footer>
+    <p class="texto">Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor.</p>
+  </footer>
 
 </body>
 </html>
